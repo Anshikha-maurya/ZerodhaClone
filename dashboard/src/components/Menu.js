@@ -92,7 +92,13 @@ const Menu = () => {
         <hr />
         <div className="profile" onClick={handleProfileClick}>
           <div className="avatar">ZU</div>
+          <Link
+              style={{ textDecoration: "none" }}
+              to="/login"
+              onClick={() => handleMenuClick(7)}
+            >
           <p className="username">USERID</p>
+          </Link>
         </div>
       
       </div>
